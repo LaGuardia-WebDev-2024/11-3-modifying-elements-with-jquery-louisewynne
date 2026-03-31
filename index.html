@@ -13,11 +13,21 @@
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Monarch_caterpillar_on_swan_plant_branchlet.jpg/960px-Monarch_caterpillar_on_swan_plant_branchlet.jpg?_=20080909013513"
       width="400"
     />
+    <br>
+    <button>Grow into a butterfly</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-
-
+      $("button").css("color", "pink");
+      $("button").css("background-color", "green");
+      $("button").click(function(){
+        $("h1").text("The Butterfly");
+        $("P").html("This is a <strong>butterfly</strong> in its natural habitat:");
+        $("img").attr("src", "https://www.flawildflowers.org/wp-content/uploads/2024/06/1_COVER_Papilio-polyxenes_Emily-Bell.jpg");
+        $("h1").css("color", "rgb(255, 64, 114)");
+        $("p").css("color", "rgb(113, 157, 222)");
+        $("html").css("background-color", "rgb(255, 223, 223)");
+      })
       
     </script>
   </body>
